@@ -1,26 +1,43 @@
-# ReconForge
+# ReconForge  
+Automated Reconnaissance Pipeline for Security Researchers
 
-ReconForge is a fully automated reconnaissance and attack-surface mapping framework for penetration testers, red teams, and bug bounty hunters.  
-It combines industry-standard tools into a single workflow that discovers assets, resolves DNS, probes services, collects URLs, enumerates parameters, scans for vulnerabilities, and enriches findings with intelligence data.
+ReconForge is a lightweight, fast, and efficient Bash-based reconnaissance framework designed for penetration testers and bug bounty hunters.  
+It integrates Subfinder, HTTPx, Katana, and Nuclei into a seamless end-to-end workflow for asset discovery and vulnerability scanning.
+
+This project is built to simplify recon, automate repetitive tasks, and generate clean, structured output for further analysis.
 
 ---
 
 ## 🚀 Features
 
-- Automated subdomain enumeration  
-- DNS resolution  
-- HTTP(S) probing and service detection  
-- High-speed port scanning  
-- URL discovery and crawling  
-- Parameter extraction  
-- Vulnerability scanning (Nuclei)  
-- Shodan enrichment (optional)  
-- Cleanly organized output directories  
-- One-command operation
+- Automated recon workflow
+- Subdomain enumeration
+- HTTP/S probing for live hosts
+- URL crawling & discovery
+- Vulnerability scanning with Nuclei
+- Organized output directory with timestamp
+- Simple one-script execution
+- Easy installation via `requirements.sh`
 
 ---
 
-## 📁 Output Structure
+## 🧩 Tools Used
 
-After each scan, a directory is created:
+ReconForge relies on the following tools:
 
+- **Subfinder** – Passive subdomain enumeration  
+- **HTTPx** – Probe HTTP services & gather metadata  
+- **Katana** – High-performance web crawler  
+- **Nuclei** – Vulnerability scanning engine  
+
+These must be installed before running the script.
+
+---
+
+## 📦 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/piyush295/reconforge
+cd reconforge

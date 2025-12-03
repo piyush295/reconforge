@@ -44,6 +44,3 @@ cd reconforge
 chmod +x requirements.sh
 ./requirements.sh
 ./reconforge.sh example.com
-
-
-

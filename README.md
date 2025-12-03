@@ -43,4 +43,7 @@ git clone https://github.com/piyush295/reconforge
 cd reconforge
 chmod +x requirements.sh
 ./requirements.sh
+./reconforge.sh example.com
+
+
 
